@@ -7,7 +7,7 @@ const subTitle = wrapper.querySelector('p')
 window.onload = () => {
     function ajax() {
         let xhr = new XMLHttpRequest()
-        xhr.open("GET", "https://sonplaceholder.typicode.com/posts", true)
+        xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true)
         xhr.onload = (e) => {
             if(!xhr.status == 200 & xhr.status < 300){
                 offline()
